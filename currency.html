@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="currency.css" />
+    <script
+      src="https://kit.fontawesome.com/f1db830db4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Currency converter</title>
+  </head>
+  <body>
+    <div class="convTable">
+      <h2>Convertion</h2>
+      <div class="conv">
+        <div class="inp">
+          <label for="amount">Amount</label><br />
+          <input type="number" name="amount" id="amount" placeholder="000000" />
+        </div>
+        <div class="inp">
+          <label for="from">From</label><br />
+          <select type="select" name="from" id="from"></select>
+        </div>
+        <span class="btn"><i class="fa-solid fa-arrows-rotate"></i></span>
+        <div class="inp">
+          <label for="to">To</label><br />
+          <select type="select" name="to" id="to"></select>
+        </div>
+      </div>
+      <button class="convertBtn">Convert</button>
+    </div>
+    <div class="result">
+      <h2>Result</h2>
+      <div class="resultText"></div>
+    </div>
+    <script src="currency.js"></script>
+  </body>
+</html>
