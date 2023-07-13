@@ -74,9 +74,7 @@ function calculateRate(data) {
   let ratio = parseFloat(data.rates[currT]) / parseFloat(data.rates[currF]);
   let res = money * ratio;
   let div = document.createElement("div");
-  div.textContent = `The result of the convertion is: ${money}${currF} = ${res.toFixed(
-    4
-  )}${currT}`;
+  div.textContent = `The result of the convertion is: ${money}${currF} = ${res.toFixed(4)}${currT}`;
   resultText.innerHTML = "";
   resultText.appendChild(div);
 }
@@ -94,7 +92,9 @@ getCurrencies("https://api.currencyfreaks.com/v2.0/supported-currencies")
     resultText.appendChild(div);
   });
 
-getRates("https://api.currencyfreaks.com/v2.0/rates/latest?apikey=Your_key")
+getRates(
+  "https://api.currencyfreaks.com/v2.0/rates/latest?apikey=apikeyy!!!"
+)
   .then((data) => {
     rates = data;
   })
